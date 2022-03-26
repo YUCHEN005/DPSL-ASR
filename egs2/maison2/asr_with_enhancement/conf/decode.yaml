@@ -1,7 +1,0 @@
-batch_size: 1
-beam_size: 60      # Beam size
-penalty: 0.3       # Incertion penalty
-maxlenratio: 0.0   # Input length ratio to obtain max output length.  If maxlenratio=0.0 (default), it uses a end-detect function to automatically find maximum hypothesis lengths
-minlenratio: 0.0   # Input length ratio to obtain min output length
-ctc_weight: 0.3    #  CTC weight in joint decoding
-lm_weight: 0.3     # RNNLM weight in joint decoding
