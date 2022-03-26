@@ -32,15 +32,16 @@ from espnet2.layers.style_loss import StyleLoss
 from espnet2.layers.kl_loss import KLLoss
 
 """
-# MD : 2021-3-26
-1. This script serves the speech enhancement(se) with asr model. The input of  se is the waveform , the output of se is the waveform.
-2. load pretrain and fixed se model.
-3. two input of asr part: 
-     enh wavform
-     clean wavform
-3.1 two channel loss of asr part:
-     enh wavform -> ctc_enh_loss, att_enh_loss
-     clean wavform -> ctc_noisy_loss, att_noisy_loss
+# Yuchen Hu: 2022-3-26
+
+This script serves the speech enhancement(se) and iff-net with asr model:
+1. both the input and output of se are time-domain waveforms;
+2. two input of iffnet (output a fused feature): 
+     enh wavform (from se)
+     noisy wavform
+3. two paths in asr:
+     fused path
+     clean path
 """
 
 
