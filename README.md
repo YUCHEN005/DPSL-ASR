@@ -1,6 +1,6 @@
 # DPSL-ASR (Dual-Path Style Learning for End-to-End Noise-Robust Automatic Speech Recognition)
 
-[Dual-Path Style Learning for End-to-End Noise-Robust Speech Recognition]()
+[Dual-Path Style Learning for End-to-End Noise-Robust Speech Recognition](https://arxiv.org/abs/2203.14838)
 
 [Interactive Feature Fusion for End-to-End Noise-Robust Speech Recognition](https://arxiv.org/abs/2110.05267)
 
@@ -17,6 +17,13 @@ Right figure: back-end ASR module with style learning and consistency loss in ou
 If you find DPSL-ASR or IFF-Net useful in your research, please use the following BibTeX entry for citation:
 
 ```bash
+@article{hu2022dualpath,
+  title={Dual-Path Style Learning for End-to-End Noise-Robust Speech Recognition}, 
+  author={Hu, Yuchen and Hou, Nana and Chen, Chen and Chng, Eng Siong},
+  journal={arXiv preprint arXiv:2203.14838},
+  year={2022}
+}
+
 @article{hu2021interactive,
   title={Interactive Feature Fusion for End-to-End Noise-Robust Speech Recognition},
   author={Hu, Yuchen and Hou, Nana and Chen, Chen and Chng, Eng Siong},
