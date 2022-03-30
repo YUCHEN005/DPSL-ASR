@@ -14,7 +14,7 @@ Left figure: (a) joint SE-ASR approach, (b) IFF-Net baseline, (c) the proposed D
 
 Right figure: back-end ASR module with style learning and consistency loss in our DPSL-ASR. The dashed lines denote sharing parameters.
 
-If you find DPSL-ASR or IFF-Net useful in your research, please use the following BibTeX entry for citation:
+If you find DPSL-ASR useful in your research, please use the following BibTeX entry for citation:
 
 ```bash
 @article{hu2022dualpath,
