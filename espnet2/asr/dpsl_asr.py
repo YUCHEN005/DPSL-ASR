@@ -232,7 +232,7 @@ class ESPnetEnhASRModel(AbsESPnetModel):
             clean_branch = clean_all_layer_output[i]    # [B, T, D]
             style_loss += self.style_loss(enh_branch, clean_branch, enh_encoder_out_lens)
 
-        style_loss = style_loss / L
+        style_loss = style_loss / (L * D * D)
 
         # 1d. consistency loss between decoder outputs
         B, U, V = enh_decoder_out.shape
