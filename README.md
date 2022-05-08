@@ -24,11 +24,13 @@ If you find DPSL-ASR useful in your research, please use the following BibTeX en
   year={2022}
 }
 
-@article{hu2021interactive,
+@inproceedings{hu2022interactive,
   title={Interactive Feature Fusion for End-to-End Noise-Robust Speech Recognition},
   author={Hu, Yuchen and Hou, Nana and Chen, Chen and Chng, Eng Siong},
-  journal={arXiv preprint arXiv:2110.05267},
-  year={2021}
+  booktitle={ICASSP 2022-2022 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+  pages={6292--6296},
+  year={2022},
+  organization={IEEE}
 }
 ```
 
