@@ -17,7 +17,7 @@ Right figure: back-end ASR module with style learning and consistency loss in ou
 If you find DPSL-ASR useful in your research, please use the following BibTeX entry for citation:
 
 ```bash
-@article{hu2022dualpath,
+@article{hu2022dual,
   title={Dual-Path Style Learning for End-to-End Noise-Robust Speech Recognition}, 
   author={Hu, Yuchen and Hou, Nana and Chen, Chen and Chng, Eng Siong},
   journal={arXiv preprint arXiv:2203.14838},
