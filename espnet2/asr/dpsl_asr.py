@@ -233,15 +233,6 @@ class ESPnetEnhASRModel(AbsESPnetModel):
             style_loss += self.style_loss(enh_branch, clean_branch, enh_encoder_out_lens)
 
         style_loss = style_loss / (L * D * D)
-
-        # 1d. consistency loss between decoder outputs
-        B, U, V = enh_decoder_out.shape
-        assert clean_decoder_out.shape == (B, U, V)
-        assert self.vocab_size == V
-        ys_in_pad, ys_out_pad = add_sos_eos(text_ref_all, self.sos, self.eos, self.ignore_id)
-        cons_loss1 = self.criterionConsistencyLoss(enh_decoder_out, clean_decoder_out, ys_out_pad) 
-        cons_loss2 = self.criterionConsistencyLoss(clean_decoder_out, enh_decoder_out, ys_out_pad)
-        cons_loss = cons_loss1 + cons_loss2
         
 
         # 2a. enh attention loss
@@ -292,6 +283,17 @@ class ESPnetEnhASRModel(AbsESPnetModel):
             clean_loss_asr = clean_loss_ctc
         else:
             clean_loss_asr = self.ctc_weight * clean_loss_ctc + (1 - self.ctc_weight) * clean_loss_att
+            
+        
+        # 1d. consistency loss between decoder outputs
+        B, U, V = enh_decoder_out.shape
+        assert clean_decoder_out.shape == (B, U, V)
+        assert self.vocab_size == V
+        ys_in_pad, ys_out_pad = add_sos_eos(text_ref_all, self.sos, self.eos, self.ignore_id)
+        cons_loss1 = self.criterionConsistencyLoss(enh_decoder_out, clean_decoder_out, ys_out_pad) 
+        cons_loss2 = self.criterionConsistencyLoss(clean_decoder_out, enh_decoder_out, ys_out_pad)
+        cons_loss = cons_loss1 + cons_loss2
+        
 
         # 4a. total asr loss
         if self.clean_weight == 0.0:
