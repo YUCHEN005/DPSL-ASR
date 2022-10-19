@@ -8,7 +8,8 @@
 
 DPSL-ASR is a novel method for end-to-end noise-robust speech recognition. It extends our prior work IFF-Net (Interactive Feature Fusion Network) with dual-path inputs and style learning, which achieves better ASR performance on [RATS Channel-A dataset](https://github.com/YUCHEN005/RATS-Channel-A-Speech-Data) and CHiME-4 1-Channel Track Dataset.
 
-<img src="https://user-images.githubusercontent.com/90536618/160274914-a78b6752-cf5b-497d-92e8-22d6fce100ca.png" width=510> &emsp; <img src="https://user-images.githubusercontent.com/90536618/160275153-2f78ecb1-1cd4-4947-8df3-20102cf09ffb.png" width=290>
+<img width=510 src="https://user-images.githubusercontent.com/90536618/196597886-bd3af18c-0cd7-4852-8066-5b5872531b0c.png"> &emsp; <img width=290 src="https://user-images.githubusercontent.com/90536618/196597890-55bdcd9a-e958-476a-b1d3-248b1ba563ea.png">
+
 
 Left figure: (a) joint SE-ASR approach, (b) IFF-Net baseline, (c) the proposed DPSL-ASR approach.
 
