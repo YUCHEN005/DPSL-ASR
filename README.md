@@ -11,9 +11,9 @@ DPSL-ASR is a novel method for end-to-end noise-robust speech recognition. It ex
 <img width=510 src="https://user-images.githubusercontent.com/90536618/196597886-bd3af18c-0cd7-4852-8066-5b5872531b0c.png"> &emsp; <img width=290 src="https://user-images.githubusercontent.com/90536618/196597890-55bdcd9a-e958-476a-b1d3-248b1ba563ea.png">
 
 
-Left figure: (a) joint SE-ASR approach, (b) IFF-Net baseline, (c) the proposed DPSL-ASR approach.
+Left figure: (a) joint SE-ASR approach, (b) IFF-Net baseline, (c) our proposed DPSL-ASR approach.
 
-Right figure: back-end ASR module with style learning and consistency loss in our DPSL-ASR. The dashed lines denote sharing parameters.
+Right figure: back-end ASR module with style learning and consistency loss in our DPSL-ASR. The dashed arrows denote sharing parameters.
 
 If you find DPSL-ASR useful in your research, please use the following BibTeX entry for citation:
 
