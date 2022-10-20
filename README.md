@@ -37,7 +37,13 @@ If you find DPSL-ASR useful in your research, please use the following BibTeX en
 
 ## Usage
 
-Our code implementation is based on [ESPnet](https://github.com/espnet/espnet). You can intall it directly using our provided ESPnet(v.0.9.6) folder, or install from official website and then add files from our repo. Kindly use the command `pip install -e .` to install ESPnet.
+Our code implementation is based on [ESPnet](https://github.com/espnet/espnet)(v.0.9.6), please kindly use the following commands for installation.
+
+```bash
+git clone https://github.com/YUCHEN005/DPSL-ASR.git
+cd DPSL-ASR
+pip install -e .
+```
 
 In our folder, the running scripts are at `egs2/rats_chA/asr_with_enhancement/{run_rats_chA_dpsl_asr, rats_chA_dpsl_asr}.sh`, and the network code are at `espnet2/{asr/, enh/, layers/}`. 
 
