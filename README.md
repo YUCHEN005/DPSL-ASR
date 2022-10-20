@@ -37,7 +37,7 @@ If you find DPSL-ASR useful in your research, please use the following BibTeX en
 
 ## Usage
 
-Our code implementation is based on [ESPnet](https://github.com/espnet/espnet)(v.0.9.6), please kindly use the following commands for installation.
+Our code implementation is based on [ESPnet](https://github.com/espnet/espnet) (v.0.9.6), please kindly use the following commands for installation.
 
 ```bash
 git clone https://github.com/YUCHEN005/DPSL-ASR.git
