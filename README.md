@@ -1,4 +1,4 @@
-# DPSL-ASR (Dual-Path Style Learning for End-to-End Noise-Robust Automatic Speech Recognition)
+# DPSL-ASR (Dual-Path Style Learning for End-to-End Noise-Robust Speech Recognition)
 
 [Dual-Path Style Learning for End-to-End Noise-Robust Speech Recognition](https://arxiv.org/abs/2203.14838)
 
