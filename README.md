@@ -49,7 +49,7 @@ In our folder, the running scripts are at `egs2/rats_chA/asr_with_enhancement/{r
 
 **Tips**: 
 
-1. To go over the entire project, please start from the script `egs2/rats_chA/asr_with_enhancement/run_rats_chA_dpsl_asr.sh` [[link]](https://github.com/YUCHEN005/DPSL-ASR/blob/master/egs2/rats_chA/asr_with_enhancement/run_rats_chA_dpsl_asr.sh)
+1. To go over the entire project, please refer to the running script `egs2/rats_chA/asr_with_enhancement/run_rats_chA_dpsl_asr.sh` [[link]](https://github.com/YUCHEN005/DPSL-ASR/blob/master/egs2/rats_chA/asr_with_enhancement/run_rats_chA_dpsl_asr.sh)
 2. To read the network code of DPSL-ASR, please refer to the script `espnet2/asr/dpsl_asr.py` [[link]](https://github.com/YUCHEN005/DPSL-ASR/blob/master/espnet2/asr/dpsl_asr.py)
 
 
