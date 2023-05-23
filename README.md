@@ -1,4 +1,4 @@
-# DPSL-ASR (Dual-Path Style Learning for End-to-End Noise-Robust Speech Recognition)
+# DPSL-ASR
 
 [Dual-Path Style Learning for End-to-End Noise-Robust Speech Recognition](https://arxiv.org/abs/2203.14838)
 
@@ -18,11 +18,11 @@ Right figure: back-end ASR module with style learning and consistency loss in ou
 If you find DPSL-ASR useful in your research, please kindly use the following BibTeX entry for citation:
 
 ```bash
-@article{hu2022dual,
+@inproceedings{hu2023dual,
   title={Dual-Path Style Learning for End-to-End Noise-Robust Speech Recognition}, 
   author={Hu, Yuchen and Hou, Nana and Chen, Chen and Chng, Eng Siong},
-  journal={arXiv preprint arXiv:2203.14838},
-  year={2022}
+  booktitle={INTERSPEECH},
+  year={2023}
 }
 
 @inproceedings{hu2022interactive,
@@ -45,11 +45,4 @@ cd DPSL-ASR
 pip install -e .
 ```
 
-In our folder, the running scripts are at `egs2/rats_chA/asr_with_enhancement/{run_rats_chA_dpsl_asr, rats_chA_dpsl_asr}.sh`, and the network code are at `espnet2/{asr/, enh/, layers/}`. 
-
-**Tips**: 
-
-1. To go over the entire project, please refer to the running script `egs2/rats_chA/asr_with_enhancement/run_rats_chA_dpsl_asr.sh` [[link]](https://github.com/YUCHEN005/DPSL-ASR/blob/master/egs2/rats_chA/asr_with_enhancement/run_rats_chA_dpsl_asr.sh)
-2. To read the network code of DPSL-ASR, please refer to the script `espnet2/asr/dpsl_asr.py` [[link]](https://github.com/YUCHEN005/DPSL-ASR/blob/master/espnet2/asr/dpsl_asr.py)
-
-
+Experiment directory is at `egs2/rats_chA/asr_with_enhancement/`, and the network code is at `espnet2/asr/dpsl_asr.py`. 
